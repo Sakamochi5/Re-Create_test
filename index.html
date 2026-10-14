@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="つくることを楽しむ、プログラミングサークルの活動紹介。">
+  <title>Code Circle — つくることを、楽しもう。</title>
+  <link rel="icon" type="image/png" href="circle-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Code Circle ホーム"><img class="brand-mark" src="circle-icon.png" alt=""><span data-site-name>Code Circle</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+      <a href="#about">サークルについて</a><a href="#activities">活動</a><a href="#media">掲載記事</a><a class="nav-cta" href="#social">SNSをチェック <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy"><p class="eyebrow"><span class="pulse"></span> LEARN · BUILD · SHARE</p>
+        <h1>つくることを、<br><span>楽しもう。</span></h1>
+        <p class="hero-lead">アイデアをコードにして、仲間と一緒に動かしてみる。<br class="desktop-only">ここは、プログラミングを気軽に楽しむサークルです。</p>
+        <a class="text-link" href="#about">私たちについて <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="コードをモチーフにしたイラスト" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card"><div class="card-top"><i></i><i></i><i></i><span>idea.js</span></div><div class="code-lines"><p><b>01</b> <em>const</em> idea = <strong>"ひらめき"</strong>;</p><p><b>02</b> <em>while</em> (idea) {</p><p class="indent"><b>03</b> build(idea);</p><p class="indent"><b>04</b> share(idea);</p><p><b>05</b> }</p><p><b>06</b> <span class="cursor">▌</span></p></div></div>
+        <span class="sticker sticker-star">✳</span><span class="sticker sticker-plus">+</span><span class="float-tag">made with curiosity</span>
+      </div>
+      <div class="hero-foot"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 04</span></div>
+    </section>
+
+    <section class="about section-wrap section-pad" id="about">
+      <div class="section-label"><span>01</span> ABOUT US</div>
+      <div class="about-content"><h2>経験よりも、<br>「やってみたい」を。</h2><div class="about-text"><p>Webサイト、アプリ、ゲーム、ちょっとした自動化。つくりたいものを持ち寄って、試して、誰かに見せてみる。そんな小さな挑戦を、仲間と重ねています。</p><p>初心者も経験者も、それぞれのペースで。知識を共有しながら、ひとりでは思いつかなかったものを一緒につくります。</p><div class="pill-row"><span>初心者歓迎</span><span>ジャンル自由</span><span>一緒に学ぶ</span></div></div></div>
+      <div class="values"><div><span class="value-icon">✳</span><b>まず、つくってみる</b><small>完璧じゃなくて大丈夫。最初の一歩を応援。</small></div><div><span class="value-icon">↗</span><b>知恵をシェアする</b><small>つまずきも発見も、みんなの学びに。</small></div><div><span class="value-icon">◎</span><b>一緒に楽しむ</b><small>技術もアイデアも、持ち寄れば広がる。</small></div></div>
+    </section>
+
+    <section class="activities section-pad" id="activities"><div class="section-wrap"><div class="section-label"><span>02</span> WHAT WE DO</div><div class="section-heading"><h2>活動の記録</h2><p>つくったもの、学んだこと、<br>みんなで過ごした時間。</p></div><div class="activity-grid" id="activity-list"></div></div></section>
+
+    <section class="media section-wrap section-pad" id="media"><div class="section-label"><span>03</span> IN THE PRESS</div><div class="section-heading"><h2>メディア掲載</h2><p>サークルの活動を<br>取り上げていただきました。</p></div><div class="press-list" id="press-list"></div></section>
+
+    <section class="social-section" id="social"><div class="section-wrap social-inner"><div><p class="eyebrow">FOLLOW OUR JOURNEY</p><h2>日々の活動は、<br>こちらから。</h2><p>制作の様子やイベントのお知らせを発信しています。</p></div><div class="social-links"><a data-social="instagram" href="#" target="_blank" rel="noopener noreferrer"><span class="social-icon">◎</span><span><b>Instagram</b><small>写真で活動をチェック</small></span><span class="external">↗</span></a><a data-social="x" href="#" target="_blank" rel="noopener noreferrer"><span class="social-icon x-icon">𝕏</span><span><b>X</b><small>最新のお知らせはこちら</small></span><span class="external">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><img class="brand-mark" src="circle-icon.png" alt=""><span data-site-name>Code Circle</span></a><span>© <span id="year"></span> <span data-site-name>Code Circle</span></span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+</body>
+</html>
