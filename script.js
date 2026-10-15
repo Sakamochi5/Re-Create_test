@@ -7,6 +7,14 @@
     if (url) link.href = url;
     else { link.removeAttribute("href"); link.classList.add("is-unset"); link.setAttribute("aria-label", `${link.dataset.social === "x" ? "X" : "Instagram"}リンクは準備中です`); }
   });
+  const scheduleList = document.getElementById("schedule-list");
+  (data.schedule || []).forEach(item => {
+    const entry = document.createElement("li");
+    const period = document.createElement("span"); period.className = "timeline-period"; period.textContent = item.period || "";
+    const title = document.createElement("h3"); title.textContent = item.title || "活動";
+    const description = document.createElement("p"); description.textContent = item.description || "";
+    entry.append(period, title, description); scheduleList.append(entry);
+  });
   const activityList = document.getElementById("activity-list");
   (data.activities || []).forEach((item, index) => {
     const card = document.createElement("article"); card.className = `activity-card ${item.color || "mint"}`;
